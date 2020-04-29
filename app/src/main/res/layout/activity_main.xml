@@ -7,12 +7,114 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/change"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <RadioGroup
+        android:id="@+id/radbut"
+        android:layout_width="210dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtview"
+        app:layout_constraintVertical_bias="0.125"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menit"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="180dp">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menit5"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="204">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menit30"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="214">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jam"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="236">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnset"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="160dp"
+        android:text="@string/Set"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radbut"
+        app:layout_constraintVertical_bias="0.568"
+        tools:ignore="MissingConstraints">
+    </Button>
+    <Button
+        android:id="@+id/btnunset"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="160dp"
+        android:text="@string/Set"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnset"
+        app:layout_constraintVertical_bias="0.568"
+        tools:ignore="MissingConstraints">
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
