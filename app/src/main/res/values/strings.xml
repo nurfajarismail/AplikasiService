@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Aplikasi Service</string>
+    <string name="menit">Sttiap 1 menit</string>
+    <string name="jam">Setiap 1 jam</string>
+    <string name="menit5">Setiap 5 menit</string>
+    <string name="menit30">Setiap 30 meit</string>
+    <string name="Set">Set</string>
+    <string name="unset">Unset</string>
+    <string name="change">Ubah wallpaper setelah :</string>
 </resources>
