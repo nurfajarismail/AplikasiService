@@ -12,7 +12,7 @@ import java.io.IOException;
 import androidx.annotation.Nullable;
 
 public class WallpaperChangeService extends Service implements Runnable {
-    private int wallpaperID[] = {R.drawable.kmti, R.drawable.umy};
+    private int wallpaperID[] = {R.drawable.wal1, R.drawable.wal2};
     private int waktu;
     private int FLAG = 0;
     private Thread t;
